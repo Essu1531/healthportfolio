@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8%;
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .7rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(55, 53, 53);
+    border-radius: 5rem;
+}
+
+.logo{
+    width: 40%;
+    position: relative;
+    left: 0;
+}
+
+.logo img{
+    height: 4rem;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    column-gap: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+ul li a{
+    color: black;
+}
+ul li a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    height: 100vh;
+    background-color: #e2e7e6;
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 60%;
+    padding: 4%;
+    padding-top: 4.5%;
+}
+.demand{
+    font-size: 0.9rem;
+}
+.content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 3%;
+}
+.content p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+section .animate{
+    transition: 1s;
+    filter: blur(3px);
+  }
+  section.show-animate .animate{
+    opacity: 1;
+    filter: blur(0);
+  }
+  
+  .sec-1 .animate{
+    transform: translateX(-100%);
+  }
+  .sec-1.show-animate .animate{
+    transform: translateX(0);
+  }
+  .sec-1, .sec-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 120vh;
+    position: relative;
+    margin-top: 0;
+}
+.sec-1 p{
+    width: 60%;
+}
+.sec-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sec-2 h1{
+    position: relative;
+    padding: 3%;
+}
+.sec-2 .images{
+    position: relative;
+    padding-top: 0;
+}
+.sec-2 .images img{
+    max-width: 400px;
+    margin: 0 30px;
+    transform: translateX(100%);
+    transition-delay: calc(.2s * var(--i));  
+}
+.sec-2 .animate{
+    transform: translateX(100%);
+  }
+  .sec-2.show-animate .animate{
+    transform: translateX(0);
+  }
+.sec-2 h4,p{
+    margin: 2% 30px;
+    width: 85%;
+    font-weight: 500;
+}
+.sec-2 .pics{
+    display: flex;
+}
+.sec-3 .animate{
+    transform: translateY(-200%);
+}
+.sec-3.show-animate .animate{
+    transform: translateY(-10%);
+}
+.sec-3 p{
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+.container{
+    width: 28vmin;
+    height: 28vmin;
+    border: 4px solid rgb(15, 15, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    background-color: #3f3f3f;
+    border-bottom: 10px solid #c2c5c4;
+}
+i{
+    color: #c2c5c4;
+    font-size: 2.5rem;
+    text-align: center;
+}
+span.num{
+    color: aliceblue;
+    place-items: center;
+    font-weight: 600;
+    text-align: center;
+    font-size: 3em;
+}
+span.text{
+    color: aliceblue;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+.sec-5 .animate{
+    transform: translateX(-100%);
+}
+.sec-5.show-animate .animate{
+    transform: translateX(0);
+}
+#preloader{
+    background: #f4fbfb url("PHOTOS/loading.gif") no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 30%;
+}
+.hide{
+    display: none;
+}
+.sec-9 .animate{
+    transform: translateX(100%);
+  }
+.sec-9.show-animate .animate{
+    transform: translateX(0);
+  }
+.sec-9{
+    display: flex;
+    flex-direction: column;
+}
+.sec-9 .box{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.sec-9 .features ol {
+    list-style: decimal;
+    list-style-type: square;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.sec-9 .features {
+    padding-right: 7%;
+}
+.sec-9 .features h3{
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.sec-9 .benefits h3{
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.sec-9 .benefits ol{
+    list-style: decimal;
+    list-style-type: square;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.sec-9 .box{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20%;
+}
+
+.sec-9 h4{
+    padding-top: 10%;
+    font-family: 'Times New Roman', serif;
+    font-size: 2rem;
+}
+.sec-6{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.sec-6 .animate{
+    transform: translateX(-100%);
+  }
+  .sec-6.show-animate .animate{
+    transform: translateX(0);
+  }
+  .sec-6 .p2{
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', serif;
+    font-weight: 800;
+  }
+  .sec-6 .p1{
+    font-weight: 700;
+  }
+  .sec-6 .p3{
+    width: 50%;
+    font-weight: 300;
+  }
+  .sec-6 .paragraph{
+    width: 100%;
+    position: relative;
+    line-height: 1.5rem;
+  }
+  .sec-6 .images img{
+    align-items: center;
+    max-width: 300px;
+    margin: 0 0 0 12%;
+    transform: translateX(100%);
+    transition-delay: calc(.2s * var(--i));  
+}
+.traniner-one-content{
+    display: flex;
+}
+.trainers-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sec-6 .first-content{
+    width: 45%;
+    margin: 0 6%;
+}
+footer {
+    background-color: #535252;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 35%;
+  }
+  .sec-7 .animate{
+    transform: translateX(100%);
+  }
+  .sec-7.show-animate .animate{
+    transform: translateX(0);
+  }
+  .sec-7 i{
+    color: #535252;
+    padding: 15%;
+  }
+  .sec-7 .first , .second , .third , .four{
+    width: 30%;
+    text-align: center;
+  }
+  .sec-7 .para-content{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', serif;
+    font-weight: 600;
+  }
